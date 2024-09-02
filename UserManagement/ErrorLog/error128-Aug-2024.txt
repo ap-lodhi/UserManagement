@@ -1,0 +1,30 @@
+DD-08-2024 16-56-38exSystem.InvalidOperationException: The ConnectionString property has not been initialized.
+   at System.Data.SqlClient.SqlConnection.PermissionDemand()
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at UserManagement.DAL.DalRegister.Register(RegisterModel reg) in C:\Users\win\source\repos\UserManagement\UserManagement\DAL\DALRegister.cs:line 24
+DD-08-2024 17-55-38exSystem.NullReferenceException: Object reference not set to an instance of an object.
+   at UserManagement.DAL.DalRegister.Register(RegisterModel reg) in C:\Users\win\source\repos\UserManagement\UserManagement\DAL\DALRegister.cs:line 36
+DD-08-2024 17-56-16exSystem.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_InsertUser' expects parameter '@Address', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at UserManagement.DAL.DalRegister.Register(RegisterModel reg) in C:\Users\win\source\repos\UserManagement\UserManagement\DAL\DALRegister.cs:line 43
+ClientConnectionId:dd69b900-c6ad-4705-a956-73ded190b9ef
+Error Number:201,State:4,Class:16
+DD-08-2024 17-56-25exSystem.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_InsertUser' expects parameter '@Address', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at UserManagement.DAL.DalRegister.Register(RegisterModel reg) in C:\Users\win\source\repos\UserManagement\UserManagement\DAL\DALRegister.cs:line 43
+ClientConnectionId:dd69b900-c6ad-4705-a956-73ded190b9ef
+Error Number:201,State:4,Class:16

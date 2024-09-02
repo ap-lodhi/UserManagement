@@ -1,0 +1,26 @@
+﻿@* l
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model UserManagement.Models.RegisterModel
+<h2>Dashboard</h2>
+
+
+
+<div class="border border-info  w-50 m-auto p-5">
+
+    <p>Name: @Model.Name </p>
+    <p>Email: @Model.Email </p>
+    <p>Mobile Number: @Model.MobileNumber </p>
+    <p>Address: @Model.Address </p>
+
+    <br />
+    <button class="btn btn-primary" onclick="updateDetails()">Update Details</button>
+</div>
+
+<script>
+    function updateDetails() {
+        window.location.href = "/Dashbord/Update";
+    }
+</script>
